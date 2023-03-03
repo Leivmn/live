@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+
+<app-employee/>
+<app-employee/>
+<app-employee/>
+
+<p>my mega secret password: <b>{{ getPassword() }}</b></p>
+<p>{{ edad >= 18 ? "Mayor de edad" : "Menor de edad"}}</p>
+
+<p>Mi nombre es: {{ name.value }}</p>
+
+<div class="formTest">
+  <p>Introduce tu nombre: <input type="text" #name (keyup)="0" [disabled]="disabled"></p>
+  <p>Aceptar terminos y condiciones: <input type="checkbox" id="{{ checked }}" (click)="showAlert()"></p>
+</div>
+
